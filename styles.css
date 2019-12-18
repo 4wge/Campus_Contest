@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header #logo {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+}
+
+ul li{
+    margin: 20px;
+    font-family: 'Archivo', sans-serif;
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+}
+
+ul a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.first {
+    display: flex;
+    width: 990px;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.first div {
+    margin: auto;
+} 
+
+.bloc1 {
+    display: block;
+    width: 350px;
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.bloc-txt {
+    display: block;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+#img-id {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.second {
+    display: flex;
+    width: 990px;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.second div {
+    margin: auto;
+}
+
+.bloc2 {
+    display: block;
+    width: 350px;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.bloc-txt {
+    width: 350px;
+    margin-top: 100px;
+    margin-right: 30px;
+}
