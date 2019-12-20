@@ -117,7 +117,6 @@ h1{
     height: 100vh;
     width: 100%;
     text-align: center;
-    background-color: #f2f2f2;
     color:#151616;
 }
 
@@ -140,6 +139,7 @@ h1{
     height: 100vh;
     width: 100%;
     text-align: center;
+    background-color: #f2f2f2;
     color:#151616;
 
 }
@@ -186,7 +186,6 @@ h1{
 #projects{
     height: 130vh;
     text-align: center;
-    background-color: #f2f2f2;
     color:#151616;
 
 }
@@ -206,6 +205,31 @@ h1{
 .text-projects img{
     height: 400px;
     padding: 0 20px 50px 20px;
+}
+
+/* Recommendation */
+
+#recommendations{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.text-recommendations{
+    position: relative;
+    top: 10%;
+    
+}
+
+
+.text-recommendations p{
+    color:#151616;
+    font-size: 1.5em;
+    padding: 3em 15em;
+    padding-bottom: 1em;
+    line-height: 1.5em;
 }
 
 /* Contact */
