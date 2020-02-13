@@ -72,6 +72,63 @@ h1{
     font-size: 1.5em; 
 }
 
+.snip1241 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.snip1241 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0.5em 1em;
+    padding: 0;
+}
+.snip1241 a {
+    padding: 0.5em 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+}
+.snip1241 a:before,
+.snip1241 a:after {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+.snip1241 a:before {
+    right: 0;
+    top: 0;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    -webkit-transform: translate(-100%, 50%);
+    transform: translate(-100%, 50%);
+}
+.snip1241 a:after {
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    -webkit-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
+}
+.snip1241 a:hover,
+.snip1241 .current a {
+    color: #ffffff;
+}
+.snip1241 a:hover:before,
+.snip1241 .current a:before,
+.snip1241 a:hover:after,
+.snip1241 .current a:after {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+}
+
 /* Home */
 
 #home{
@@ -116,6 +173,7 @@ h1{
 #about{
     height: 100vh;
     width: 100%;
+    overflow:scroll;
     text-align: center;
     color:#151616;
 }
@@ -138,6 +196,7 @@ h1{
 #skills{
     height: 100vh;
     width: 100%;
+    overflow:scroll;
     text-align: center;
     background-color: #f2f2f2;
     color:#151616;
@@ -185,9 +244,9 @@ h1{
 
 #projects{
     height: 130vh;
+    overflow:scroll;
     text-align: center;
     color:#151616;
-
 }
 
 .text-projects{
@@ -205,6 +264,17 @@ h1{
 .text-projects img{
     height: 400px;
     padding: 0 20px 50px 20px;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.text-projects img:hover{
+    height: 410px;
+    padding: 0 20px 50px 20px;
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 /* Recommendation */
@@ -212,6 +282,7 @@ h1{
 #recommendations{
     height: 100vh;
     width: 100%;
+    overflow:scroll;
     text-align: center;
     background-color: #f2f2f2;
     color: black;
@@ -237,6 +308,7 @@ h1{
 #contact{
     height: 100vh;
     width: 100%;
+    overflow:hidden;
     text-align: center;
     color:#151616;
     line-height: 5em;
