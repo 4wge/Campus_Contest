@@ -322,7 +322,7 @@ h1{
 .text-contact h1{
     padding-bottom: 50px;
 }
-#form input{
+#form .input-text{
     width: 35%;
     height: 50px;
     border: 1px solid #000;
@@ -337,6 +337,21 @@ h1{
     border: 1px solid #000;
     border-radius: 10px;
     font-size: 1.5em;
+}
+
+#form .submit-button{
+    font-size:1.5em;
+    text-decoration: none;
+    color: #151616;
+    background: white;
+    padding: 10px 20px;
+    border: #151616 1px solid;
+    border-radius: 50px;
+}
+
+#form .submit-button:hover{
+    color: white;
+    background: #151616;
 }
 
 .text-contact a{
