@@ -129,27 +129,36 @@
         <section id="contact">
             <div class="text-contact">
                <h1 class="wow animated fadeInUp">Me Contacter</h1>
-                <form action="" id="form" class="wow animated fadeInUp">
+                <form action="" method="post" id="form" class="wow animated fadeInUp">
                     <input class="input-text" type="text" name="prenom" placeholder="Prenom"><br>
                     <input class="input-text" type="text" name="nom" placeholder="Nom"><br>
                     <input class="input-text" type="email" name="email" placeholder="Email"><br><br>
                     <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
-                    <input class="submit-button" type="submit" name="envoi" value="Envoyer">
+                    <input class="submit-button" type="submit" name="envoi" value="Envoyer"></<input>
                 </form>
-                <p>
-                    <?php
-                    if (isset($_POST['message'])) {
-                        $mysqli = new mysqli('localhost', 'invite', 'invite_Password35', 'formulaire', 80);
-                        $mysqli->set_charset('utf8');
-                        $requete='INSERT INTO formulaire VALUES(NULL,"'.$_POST['prenom'].'","'.$_POST['nom'].'","'.$_POST['email'].'","'.$_POST['message'].'")';
-                        $resultat = $mysqli->query($requete);
-                        if ($resultat)
-                            echo 'Merci, votre message a bien été envoyé';
-                        else
-                            echo 'Erreur';
-                    }
-                    ?>
-                </p>
+                <?php
+                $host = "localhost";
+                $user = "invite";
+                $password = "invite_Password35";
+                $db_name = "portfolio_contest";
+                $prenom = $_POST['prenom'];
+                $nom = $_POST['nom'];
+                $email = $_POST['email'];
+                $message = $_POST['message'];
+
+                $mysqli = new mysqli($host, $user, $password, $db_name);
+                if ($mysqli->connect_error) {
+                    die("Connection failed: ".$mysqli->connect_error);
+                }
+                $mysqli->set_charset('utf8');
+                $requete = "INSERT INTO formulaire (prenom, nom, email, message) VALUES('$prenom', '$nom', '$email', '$message')";
+                if ($mysqli->query($requete) == TRUE) {
+                    echo ' ';
+                } else {    
+                    echo "Error: ".$requete."<br>".$mysqli->error;
+                }
+$mysqli->close();
+?>
             </div>
         </section>
     </main>

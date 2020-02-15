@@ -271,7 +271,7 @@ h1{
 }
 
 .text-projects img:hover{
-    height: 410px;
+    height: 403px;
     padding: 0 20px 50px 20px;
     -webkit-filter: grayscale(0);
 	filter: grayscale(0);
@@ -302,6 +302,10 @@ h1{
     padding-bottom: 1em;
     line-height: 1.5em;
 }
+
+
+/* Toggle Switch */
+
 
 /* Contact */
 
