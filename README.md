@@ -1,3 +1,3 @@
 # Campus_Contest
 Campus Contest portfolio
-Demo without PHP/SQL : henri-chauvac-static.netlify.com
+Demo without PHP/SQL :  https://henri-chauvac-static.netlify.com/
