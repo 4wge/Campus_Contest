@@ -72,6 +72,7 @@ h1{
     font-size: 1.5em; 
 }
 
+
 .snip1241 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -190,6 +191,7 @@ h1{
     padding: 3em 15em;
     line-height: 1.5em;
 }
+
 
 /* Skills */
 
@@ -343,6 +345,11 @@ h1{
     font-size: 1.5em;
 }
 
+#form .rgpd{
+    position: relative;
+    top:-40px;
+}
+
 #form .submit-button{
     font-size:1.5em;
     text-decoration: none;
@@ -453,4 +460,5 @@ footer p{
     #projects img{
         height: 200px;
     }
+    
 }

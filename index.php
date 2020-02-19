@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="assets/hc.png" />
+    <link href='https://css.gg/profile.css' rel='stylesheet'>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -49,7 +52,7 @@
                 <p class="wow animated fadeInUp">Anciennement passé par EPITECH Rennes où j'y ai passé un an, je suis actuellement en Bachelor informatique à Campus Academy. 
                     J'ai acquis dans le cadre de mes études une bonne maîtrise du C, de solides compétences en HTML/CSS ainsi qu'en SQL et suis aussi très à l'aise avec la gestion des systèmes d'information ce qui me rend assez autonome. 
                     Passionné comme beaucoup par l'informatique, je suis rigoureux et déterminé à apprendre pour atteindre un haut niveau de compétences.</p>
-                <a href="assets/RENNES_CHAUVAC_Henri_CV_V1.pdf" download class="wow button animated fadeIn">Mon CV</a>
+                <a href="assets/CHAUVAC_Henri_CV.pdf" download class="wow button animated fadeIn">Mon CV</a>
                 </div>
         </section>
         
@@ -65,10 +68,12 @@
                             <br><br>
                             <img src="assets/git.png" alt=""><p>Git</p>
                             <br><br>
-                            <img src="assets/mysql.png" alt=""><p>MySQL</p>
+                            <img src="assets/sql.png" alt=""><p>SQL</p>
+                            <br><br>
+                            <img src="assets/wireshark.png" alt=""><p>Wireshark</p>
                         </div>
                         <div>
-                           <h3>Language</h3>
+                           <h3>Langages</h3>
                             <img src="assets/html.png" alt=""><p>HTML/CSS</p>
                             <br><br>
                             <img src="assets/js.png" alt=""><p>Javascript</p>
@@ -83,13 +88,13 @@
                             <br><br>
                             <img src="assets/github.png" alt=""><p>Github</p>
                             <br><br>
-                            <img src="assets/office.png" alt=""><p>Office</p>
+                            <img src="assets/balsamiq.png" alt=""><p>Balsamiq</p>
                             <br><br>
                             <img src="assets/trello.png" alt=""><p>Trello</p>
                         </div>
                         <div>
                             <h3>Langues</h3>
-                            <img src="assets/anglais.jpg" alt="" class="responsive"><p>Anglais</p>
+                            <img src="assets/anglais.png" alt="" class="responsive"><p>Anglais</p>
                         </div>
                     </div>
             </div>
@@ -102,11 +107,11 @@
                 <h1 class="wow animated fadeInUp">Projets</h1>
                 <h3 class="wow animated fadeInUp">Projets Principaux</h3>
                 <div class="wow animated fadeInUp">
-                    <a href="#"><img src="assets/p1.jpeg" alt=""></a>
-                    <a href="#"><img src="assets/p2.jpeg" alt=""></a>
+                    <a href="javascript:void(0)"><img src="assets/p1.jpeg" alt=""></a>
+                    <a href="javascript:void(0)"><img src="assets/p2.jpeg" alt=""></a>
                 </div>
                 <br><br><br>
-                <a href="#" class="wow button animated fadeIn">Encore Plus</a>
+                <a href="javascript:void(0)" class="wow button animated fadeIn">Voir Plus</a>
             </div>
         </section>
 
@@ -114,11 +119,11 @@
 
         <section id="recommendations">
             <div class="text-recommendations">
-                <h1>Recommandation Pro.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur culpa sint, sed a necessitatibus aliquid officia id recusandae sapiente, nostrum, eum cum? Voluptatum asperiores debitis dolores deserunt quam quisquam animi tenetur quibusdam minima eligendi, reprehenderit iste similique at assumenda porro doloremque atque accusamus quas libero.</p>
-                <h4>Nicolas Dupont, Enterprise & Co</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur culpa sint, sed a necessitatibus aliquid officia id recusandae sapiente, nostrum, eum cum? Voluptatum asperiores debitis dolores deserunt quam quisquam animi tenetur quibusdam minima eligendi, reprehenderit iste similique at assumenda porro doloremque atque accusamus quas libero.</p>
-                <h4>Gerard Bonheur, Juif Corp.</h4>
+                <h1 class="wow animated fadeInUp">Recommandation Pro.</h1>
+                <p class="wow animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur culpa sint, sed a necessitatibus aliquid officia id recusandae sapiente, nostrum, eum cum? Voluptatum asperiores debitis dolores deserunt quam quisquam animi tenetur quibusdam minima eligendi, reprehenderit iste similique at assumenda porro doloremque atque accusamus quas libero.</p>
+                <h4 class="wow animated fadeInUp">Prenom NOM, Enterprise</h4>
+                <p class="wow animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur culpa sint, sed a necessitatibus aliquid officia id recusandae sapiente, nostrum, eum cum? Voluptatum asperiores debitis dolores deserunt quam quisquam animi tenetur quibusdam minima eligendi, reprehenderit iste similique at assumenda porro doloremque atque accusamus quas libero.</p>
+                <h4 class="wow animated fadeInUp">Prenom NOM, Enterprise</h4>
             </div>
         </section>
 
@@ -134,7 +139,8 @@
                     <input class="input-text" type="text" name="nom" placeholder="Nom"><br>
                     <input class="input-text" type="email" name="email" placeholder="Email"><br><br>
                     <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
-                    <input class="submit-button" type="submit" name="envoi" value="Envoyer"></<input>
+                    <div class="rgpd"><input type="checkbox">Accepte que mes données soient utilisées à des fins non commerciales</div>
+                    <input class="submit-button" type="submit" name="envoi" value="Envoyer"></div>
                 </form>
                 <?php
                 $host = "localhost";
@@ -166,9 +172,9 @@ $mysqli->close();
     <!-- Footer -->
     
     <footer>
-        <a href="https://github.com/S4wg"><img src="assets/githug.svg" alt=""><p>Github</p></a>
+        <a href="https://github.com/4wge"><img src="assets/githug.svg" alt=""><p>Github</p></a>
         <a href="https://fr.linkedin.com/in/henri-chauvac-809b54183"><img src="assets/linkedin.png" alt=""><p>Linkedin</p></a><br><br>
-        <p>Copyright © 2020 Henri Chauvac</p>
+        <p>Copyright © 2020 Henri Chauvac - <a href="mentionslégales.html">Mentions légales</a></p>
     </footer>
 </body>
 </html>
